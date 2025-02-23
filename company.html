@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east" />
+  <title>Company</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar d-flex fixed-top bg-navbar">
+        <div class="container-fluid d-flex align-items-center">
+          <div class="col-2 d-flex justify-content-start">
+            <figure class="m-0">
+              <img class="logo img-fluid" src="assets/616eb564ea00e94bb450de67_tubik_logo.svg" alt="logo" />
+            </figure>
+          </div>
+          <div class="w-auto d-flex justify-content-end  d-md-none">
+            <a class="nav-link" href="#">UA</a>
+          </div>
+          <button aria-label="hamburguesa" class="navbar-toggler d-md-none border-0 bg-transparent" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasMenuLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white p-0" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white p-0" href="#">work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white p-0" href="services.html">services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white p-0"  href="company.html">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white p-0" href="#">blog</a>
+                  <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 -960 960 960"
+                    width="54px" fill="#4c32ff">
+                    <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                  </svg>
+
+                </li>
+                <li class="nav-item mt-4">
+                  <a class="nav-link text-white p-0" href="#">contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1 d-flex justify-content-center align-items-center d-none d-md-flex">
+            <a class="nav-link fs-3 d-flex" href="#">
+              <span>work</span>
+              <span>work</span>
+            </a>
+          </div>
+          <div class="col-1 d-flex justify-content-center align-items-center d-none d-md-flex">
+            <a class="nav-link fs-3 d-flex" href="services.html">
+              <span>services</span>
+              <span>services</span>
+            </a>
+          </div>
+          <div class="col-1 d-flex justify-content-center d-none d-md-flex">
+            <a class="nav-link fs-3 d-flex d-none" href="#">
+              <span>about</span>
+              <span>about</span>
+            </a>
+          </div>
+          <div class="col-2 d-flex align-items-center d-none d-md-flex">
+            <a class="nav-link fs-3 d-flex" href="#">
+              <span>blog</span>
+              <span>blog</span>
+            </a>
+          </div>
+          <div class="w-auto d-flex justify-content-end d-none d-sm-block">
+            <a class="nav-link" href="#">UA</a>
+          </div>
+          <div class="w-auto d-flex justify-content-center align-items-center rotate-wrapper d-none d-md-flex">
+            <img class="rotate img-fluid" src="assets/616fd69300cf6c2c21791d72_play_showreel.svg" alt="rotate" />
+            <img class="play img-fluid" src="assets/616fd67016f5ef20163b532d_Triangle_play_icon.svg" alt="play" />
+          </div>
+          <div class="w-auto d-flex justify-content-end d-none d-md-flex">
+            <a class="nav-link fs-2 d-flex" href="#">
+              <span class="contact-us">contact us</span>
+              <span class="contact-us">contact us</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="container-fluid mt-5 section1">
+    <div class="row gap-0">
+      <div class="col-12 col-md-7 d-flex justify-content-md-end section1">
+        <h1 class="services mb-0">about</h1>
+      </div>
+      <div class="col-lg-10 col-md-12 col-11 d-flex justify-content-start">
+        <h1 class="products mt-0">we help brands & products achieve goals</h1>
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-5">
+        <h5 class="text">We do</h5>
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-md-end mt-1 mt-md-5 order-2 order-md-1">
+        <h5 class="text">
+          Tubik is a group of people united by the desire to work with various
+          companies and increase their capital with the help of websites,
+          mobile applications, graphic design, and creative projects. Our goal
+          is to create a substantial result for the client.
+        </h5>
+      </div>
+      <div class="col-12 col-md-4 d-flex mt-1 mt-md-5 order-1 order-md-2 ">
+        <h5 class="text">We form small teams for the necessary tasks, which
+          can consist of UI/UX designers, graphic designers, artists, motion
+          designers, and other specialists. Since 2013, we have constantly
+          been changing in search of ourselves and organically came to the
+          format of an agency that can create digital products and design
+          systems of any level.</h5>
+      </div>
+  </section>
+  <section>
+    <div class="container-fluid mt-4">
+      <div class="slider">
+      <div class="swiper mySwiper swiper swiper2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/about1.jpg" loading="lazy" width="517" sizes="(max-width: 479px) 65vw, 30vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf624cd9b0bdc8588b68_CTRZwoMw-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf624cd9b0bdc8588b68_CTRZwoMw-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf624cd9b0bdc8588b68_CTRZwoMw.webp 1024w" class="slide-inside _1">           
+                 </div>
+              <div class="swiper-slide">
+                <img src="assets/about2.jpg" loading="lazy" width="517" sizes="(max-width: 479px) 100vw, 45vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/65d66931e0cd31c77226951e_image%2043-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/65d66931e0cd31c77226951e_image%2043-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/65d66931e0cd31c77226951e_image%2043.webp 1030w" class="slide-inside">           
+                 </div>
+              <div class="swiper-slide">
+                <img src="assets/about3.jpg" loading="lazy" width="517" sizes="(max-width: 479px) 100vw, 45vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820302bf0844731ae09_7947299-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820302bf0844731ae09_7947299-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820302bf0844731ae09_7947299-p-1080.webp 1080w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820302bf0844731ae09_7947299.webp 1220w" class="slide-inside">            
+                </div>
+              <div class="swiper-slide">
+                <img src="assets/about4.webp" loading="lazy" width="517" sizes="(max-width: 479px) 100vw, 53vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630fa811e98a3f72ac9e636d_PbPpdBfg-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630fa811e98a3f72ac9e636d_PbPpdBfg-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630fa811e98a3f72ac9e636d_PbPpdBfg-p-1080.webp 1080w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630fa811e98a3f72ac9e636d_PbPpdBfg-p-1600.webp 1600w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630fa811e98a3f72ac9e636d_PbPpdBfg-p-2000.webp 2000w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630fa811e98a3f72ac9e636d_PbPpdBfg-p-2600.webp 2600w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630fa811e98a3f72ac9e636d_PbPpdBfg-p-3200.webp 3200w" class="slide-inside _1">    
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/about5.webp" loading="lazy" width="517" sizes="(max-width: 479px) 70vw, 30vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb7a8a133e43c636c6d58_37710f6-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb7a8a133e43c636c6d58_37710f6-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb7a8a133e43c636c6d58_37710f6.webp 1034w" class="slide-inside _1">             
+               </div>
+              <div class="swiper-slide">
+                <img src="assets/about6.webp" loading="lazy" width="517" sizes="(max-width: 479px) 70vw, 33vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820a3e23b9317763449_be9a03a-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820a3e23b9317763449_be9a03a-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820a3e23b9317763449_be9a03a.webp 978w" class="slide-inside">
+                </div>
+              <div class="swiper-slide">
+                  <img src="assets/about7.webp" loading="lazy" width="517" sizes="(max-width: 479px) 100vw, 35vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820ef1221d4827cf08e_3882251-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820ef1221d4827cf08e_3882251-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820ef1221d4827cf08e_3882251-p-1080.webp 1080w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820ef1221d4827cf08e_3882251.webp 1292w" class="slide-inside">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/about8.webp" loading="lazy" width="517" sizes="(max-width: 479px) 100vw, 45vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820c693d2f71517f27d_e59cebf-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820c693d2f71517f27d_e59cebf-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820c693d2f71517f27d_e59cebf-p-1080.webp 1080w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630cb820c693d2f71517f27d_e59cebf.webp 1346w" class="slide-inside">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/about9.webp" loading="lazy" width="517" sizes="(max-width: 479px) 80vw, 53vw" alt="" srcset="https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf484cd9b02eb95889e2_sWFIYAOo-p-500.webp 500w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf484cd9b02eb95889e2_sWFIYAOo-p-800.webp 800w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf484cd9b02eb95889e2_sWFIYAOo-p-1080.webp 1080w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf484cd9b02eb95889e2_sWFIYAOo-p-1600.webp 1600w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf484cd9b02eb95889e2_sWFIYAOo-p-2000.webp 2000w, https://cdn.prod.website-files.com/616d2f7455edd882e659539e/630faf484cd9b02eb95889e2_sWFIYAOo.webp 2048w" class="slide-inside _1">
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="container-fluid mt-5">
+    <div class="row text-center text-md-start align-items-center">
+      <div class="col-4 col-md-5 d-flex flex-column align-items-center align-items-md-start">
+        <p class="label">Projects</p>
+        <h1 class="numbers" data-target="900">0</h1>
+      </div>
+      <div class="col-4 col-md-5 d-flex flex-column align-items-center align-items-md-start">
+        <p class="label">Awards</p>
+        <h1 class="numbers" data-target="120">0</h1>
+      </div>
+      <div class="col-4 col-md-2 d-flex flex-column align-items-center align-items-md-start">
+        <p class="label">Years of experience</p>
+        <h1 class="numbers" data-target="10">0</h1>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-md-center text-end">Showreel</h1>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/KRn2whCgHww?autoplay=0&rel=0" title="Showreel" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  
+  <section class="container-fluid mt-5 d-none d-md-block">
+    <div class="row">
+      <div class="col-5">
+      </div>
+      <div class="col-md-7 col-12">
+        <h1 class="titleMvLittle">Little moments we're proud of</h1>
+      </div>
+    </div>
+    <div class="row mt-md-5">
+      <div class="col-md-5 col-12  mt-md-5">
+        <h6 class="textIcons">Awards and recognition</h6>
+      </div>
+      <div class="col-md-2 col-6">
+        <figure>
+          <img class="icons accordion" src="assets/icon1.png" alt="webby">
+          <h6 class="mt-4 textIcons" >
+            Webby awards<br>
+            3 × webby awards<br>
+            1 × webby nominee<br>
+            1 × webby honoree<br>
+            2 × webby jury<br>
+          </h6>
+        </figure>
+        </div>
+        <div class="col-md-2 col-6">
+          <figure>
+            <img class="icons img-fluid" src="assets/icon2.png" alt="w">
+            <h6 class="mt-4 textIcons">
+              Awwwards<br>
+              6 × site of the day<br>
+              8 × honorable mention<br>
+              2 × awwwards jury<br>
+            </h6>
+          </figure>
+        </div>
+       <div class="col-md-2 col-6">
+        <figure>
+          <img class="iconsca img-fluid" src="assets/icon3.png" alt="w">
+          <h6 class="mt-4 textIcons">
+            Communication Arts<br>
+            2 × webpick<br>
+          </h6>
+        </figure>
+       </div>
+       </div>
+       <div class="row">
+        <div class="col-5 d-none d-md-block">
+          </div>
+          <div class="col-md-2 col-6">
+            <figure class="mt-5">
+              <img class="icons accordion mt-4" src="assets/icon4.png" alt="webby">
+              <h6 class="mt-5 textIcons">
+                FWA awards<br>
+                3 × site of the day<br>
+                1 × fwa jury<br>
+              </h6>
+            </figure>
+            </div>
+            <div class="col-md-2 col-6">
+              <figure class="mt-5">
+                <img class="iconsred accordion mt-4" src="assets/icon5.png" alt="webby">
+                <h6 class="mt-4 textIcons">
+                  Reddot<br>
+                 1 × reddot<br>
+                </h6>
+              </figure>
+            </div>
+           <div class="col-md-2 col-6">
+            <figure class="">
+              <img class="iconsred accordion mt-5" src="assets/icon6.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                Apple<br>
+                1 × app of the day<br>
+                1 × new apps we love<br>
+                1 × this week's favourites<br>
+              </h6>
+            </figure>
+           </div>
+        </div>
+        <div class="row"> 
+          <div class="col-5 d-none d-md-block">
+            </div>
+            <div class="col-md-2 col-6">
+              <figure class="mt-5">
+                <img class="iconsred accordion mt-4" src="assets/icon7.png" alt="webby">
+                <h6 class="mt-4 textIcons">
+                  Behance<br>
+                  12 × behance award<br>
+                  31 × interaction<br>
+                </h6>
+              </figure>
+              </div>
+              <div class="col-md-2 col-6">
+                <figure class="mt-lg-4 mt-md-5">
+                  <img class="iconsred accordion mt-4" src="assets/icon8.svg" alt="webby">
+                  <h6 class="mt-lg-4 mt-md-3 textIcons">
+                    Dribbble<br>
+                    Top 1 agency<br>
+                  </h6>
+                </figure>
+              </div>
+             <div class="col-md-2 col-6">
+              <figure class="mt-5">
+                <img class="iconsred accordion mt-4" src="assets/icon9.svg" alt="webby">
+                <h6 class="mt-4 textIcons">
+                  Webflow<br>
+                  professional partner<br>
+                </h6>
+              </figure>
+             </div>
+          </div>
+       </div>
+    </div>
+  </section>
+  <section class="container-fluid mt-5 d-md-none">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-12">
+            <h1 class="titleMvLittle">Little moments we're proud of</h1>
+        </div>
+    </div>
+    <div class="row mt-md-5">
+        <div class="col-md-5 col-12 mt-md-5">
+            <h6 class="titleMvAwards">Awards and recognition</h6>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-2 col-6">
+            <figure>
+                <img class="icons accordion" src="assets/icon1.png" alt="webby">
+                <h6 class="mt-4 textIcons">
+                    Webby awards<br>
+                    3 × webby awards<br>
+                    1 × webby nominee<br>
+                    1 × webby honoree<br>
+                    2 × webby jury<br>
+                </h6>
+            </figure>
+        </div>
+        <div class="col-md-2 col-6">
+            <figure>
+                <img class="icons" src="assets/icon2.png" alt="w">
+                <h6 class="mt-4 textIcons">
+                    Awwwards<br>
+                    6 × site of the day<br>
+                    8 × honorable mention<br>
+                    2 × awwwards jury<br>
+                </h6>
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-6">
+            <figure class="mt-5">
+                <img class="iconsca img-fluid mt-4" src="assets/icon3.png" alt="w">
+                <h6 class="mt-5 textIcons">
+                    Communication Arts<br>
+                    2 × webpick<br>
+                </h6>
+            </figure>
+        </div>
+        <div class="col-md-2 col-6">
+            <figure class="mt-5">
+                <img class="icons accordion mt-4" src="assets/icon4.png" alt="webby">
+                <h6 class="mt-5 textIcons">
+                    FWA awards<br>
+                    3 × site of the day<br>
+                    1 × fwa jury<br>
+                </h6>
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-6">
+            <figure class="mt-5">
+                <img class="icons accordion mt-4" src="assets/icon5.png" alt="webby">
+                <h6 class="mt-4 textIcons">
+                    Reddot<br>
+                    1 × reddot<br>
+                </h6>
+            </figure>
+        </div>
+        <div class="col-md-2 col-6">
+            <figure>
+                <img class="icons accordion mt-5" src="assets/icon6.svg" alt="webby">
+                <h6 class="mt-4 textIcons">
+                    Apple<br>
+                    1 × app of the day<br>
+                    1 × new apps we love<br>
+                    1 × this week's favourites<br>
+                </h6>
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-6">
+            <figure class="mt-5">
+                <img class="icons accordion mt-4" src="assets/icon7.png" alt="webby">
+                <h6 class="mt-4 textIcons">
+                    Behance<br>
+                    12 × behance award<br>
+                    31 × interaction<br>
+                </h6>
+            </figure>
+        </div>
+        <div class="col-md-2 col-6">
+            <figure class="mt-4">
+                <img class="icons accordion mt-4" src="assets/icon8.svg" alt="webby">
+                <h6 class="mt-3 textIcons">
+                    Dribbble<br>
+                    Top 1 agency<br>
+                </h6>
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-6">
+            <figure class="mt-5">
+                <img class="icons accordion mt-4" src="assets/icon9.svg" alt="webby">
+                <h6 class="mt-4 textIcons">
+                    Webflow<br>
+                    professional partner<br>
+                </h6>
+            </figure>
+        </div>
+    </div>
+</section>
+<section class="container-fluid container-table">
+  <div class="row fw-bold fs-6">
+    <div class="col-md-3 col-sm-4 col-4">Year</div>
+    <div class="col-md-3 col-sm-4 col-4">Award</div>
+    <div class="col-md-3 col-sm-4 col-4">Contest</div>
+    <div class="col-md-3 d-none d-md-block">Project</div>
+</div>
+<div class="row py-2 fw-bold textTable">
+    <div class="col-md-3 col-sm-4 col-4">2024</div>
+    <div class="col-md-3 col-sm-4 col-4">People's Voice Winner</div>
+    <div class="col-md-3 col-sm-4 col-4">Webby Awards</div>
+    <div class="col-md-3 d-none d-md-block">Drug Test Innocence</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2024</div>
+    <div class="col-md-3 col-sm-4 col-4">Diversity, Equity & Inclusion Honoree</div>
+    <div class="col-md-3 col-sm-4 col-4">Webby Awards</div>
+    <div class="col-md-3 d-none d-md-block">Advocacy Through Walls</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2024</div>
+    <div class="col-md-3 col-sm-4 col-4">Webby Winner</div>
+    <div class="col-md-3 col-sm-4 col-4">Webby Awards</div>
+    <div class="col-md-3 d-none d-md-block">Advocacy Through Walls</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2024</div>
+    <div class="col-md-3 col-sm-4 col-4">Honorable Mention</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">Advocacy Through Walls</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Honorable Mention</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">HP23</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Site of the Day</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">Toy Joy</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Developer Award</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">Decriminalize Poverty</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Honorable Mention</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">Decriminalize Poverty</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Site of the Day</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">Decriminalize Poverty</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Honoree</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">B-EGG</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Development Award</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">B-EGG</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Site of the Day</div>
+    <div class="col-md-3 col-sm-4 col-4">Awwwards</div>
+    <div class="col-md-3 d-none d-md-block">B-EGG</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Illustration</div>
+    <div class="col-md-3 col-sm-4 col-4">Behance</div>
+    <div class="col-md-3 d-none d-md-block">Art of Seasons</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Illustration</div>
+    <div class="col-md-3 col-sm-4 col-4">Behance</div>
+    <div class="col-md-3 d-none d-md-block">Ukrainian Identity</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Illustration</div>
+    <div class="col-md-3 col-sm-4 col-4">Behance</div>
+    <div class="col-md-3 d-none d-md-block">Art of Taste</div>
+</div>
+<div class="row py-2 textTable fw-bold">
+    <div class="col-md-3 col-sm-4 col-4">2023</div>
+    <div class="col-md-3 col-sm-4 col-4">Illustration</div>
+    <div class="col-md-3 col-sm-4 col-4">Behance</div>
+    <div class="col-md-3 d-none d-md-block">Under the Same Sun</div>
+</div>
+<div class="d-flex justify-content-start">
+  <button type="submit"
+    class="btn btn-link fs-3 fs-sm-1 custom-submit nav-link">
+    <span>see all</span>
+    <span>see all</span>
+  </button>
+  <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#4c32ff"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
+  </svg>
+</div>
+</section>
+<section class="container-fluid mt-5 d-none d-md-block">
+  <div class="row">
+    <div class="col-5">
+    </div>
+    <div class="col-md-7 col-12">
+      <h1 class="titleMvLittle">We work with large businesses, so we know how to help small ones as well</h1>
+    </div>
+  </div>
+  <div class="row mt-md-5">
+    <div class="col-md-5 col-12  mt-md-5">
+      <h6 class="textIcons">Clients</h6>
+    </div>
+    <div class="col-md-2 col-6">
+      <figure>
+        <img class="iconsWork accordion" src="assets/icon11.svg" alt="webby">
+        <h6 class="mt-4 textIcons" >
+          App icons of EMUI 10, animated clock skins for P50 Pocket, design and graphics for OS
+        </h6>
+      </figure>
+      </div>
+      <div class="col-md-2 col-6">
+        <figure>
+          <img class="iconsWork img-fluid" src="assets/icon22.svg" alt="w">
+          <h6 class="mt-4 textIcons">
+            Homepage design for a webpage and email template builder
+          </h6>
+        </figure>
+      </div>
+     <div class="col-md-2 col-6">
+      <figure>
+        <img class="iconsWork img-fluid" src="assets/icon33.svg" alt="w">
+        <h6 class="mt-4 textIcons">
+          Branding and product design for a delivery app
+        </h6>
+      </figure>
+     </div>
+     </div>
+     <div class="row">
+      <div class="col-5 d-none d-md-block">
+        </div>
+        <div class="col-md-2 col-6">
+          <figure class="mt-5">
+            <img class="iconsWork accordion mt-4" src="assets/icon44.svg" alt="webby">
+            <h6 class="mt-5 textIcons">
+              Illustrations for social awareness campaigns
+            </h6>
+          </figure>
+          </div>
+          <div class="col-md-2 col-6">
+            <figure class="mt-5">
+              <img class="iconsWork accordion mt-4" src="assets/icon55.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                Animated promos, UX expertise, and graphic design support for the marketing department
+              </h6>
+            </figure>
+          </div>
+         <div class="col-md-2 col-6">
+          <figure class="mt-5">
+            <img class="iconsWork accordion mt-5" src="assets/icon66.svg" alt="webby">
+            <h6 class="mt-4 textIcons">
+              User experience and interaction design for annual awwwards website
+            </h6>
+          </figure>
+         </div>
+      </div>
+      <div class="row"> 
+        <div class="col-5 d-none d-md-block">
+          </div>
+          <div class="col-md-2 col-6">
+            <figure class="mt-5">
+              <img class="iconsWork accordion mt-4" src="assets/icon77.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                Branding and web design for a 3D editor
+              </h6>
+            </figure>
+            </div>
+            <div class="col-md-2 col-6">
+              <figure class="mt-lg-4 mt-md-5">
+                <img class="iconsWork accordion mt-4" src="assets/icon88.svg" alt="webby">
+                <h6 class="mt-lg-4 mt-md-3 textIcons">
+                  Web design and development for a museum website
+                </h6>
+              </figure>
+            </div>
+           <div class="col-md-2 col-6">
+            <figure class="mt-5">
+              <img class="iconsWork accordion mt-4" src="assets/icon99.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                Redesign for the user interfaces and graphic content of all the company's products
+              </h6>
+            </figure>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+<section class="container-fluid mt-5 d-md-none">
+  <div class="row">
+      <div class="col-5"></div>
+      <div class="col-12">
+          <h1 class="titleMvLittle">We work with large businesses, so we know how to help small ones as well</h1>
+      </div>
+  </div>
+  <div class="row mt-md-5">
+      <div class="col-md-5 col-12 mt-md-5">
+          <h6 class="titleMvAwards">Clients</h6>
+      </div>
+  </div>
+  <div class="row mt-2">
+      <div class="col-md-2 col-6">
+          <figure>
+              <img class="icons accordion" src="assets/icon11.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                App icons of EMUI 10, animated clock skins for P50 Pocket, design and graphics for OS
+              </h6>
+          </figure>
+      </div>
+      <div class="col-md-2 col-6">
+          <figure>
+              <img class="icons" src="assets/icon22.svg" alt="w">
+              <h6 class="mt-4 textIcons">
+                Homepage design for a webpage and email template builder
+              </h6>
+          </figure>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-6">
+          <figure class="mt-5">
+              <img class="iconsca img-fluid mt-4" src="assets/icon33.svg" alt="w">
+              <h6 class="mt-5 textIcons">
+                Branding and product design for a delivery app
+              </h6>
+          </figure>
+      </div>
+      <div class="col-md-2 col-6">
+          <figure class="mt-5">
+              <img class="icons accordion mt-4" src="assets/icon44.svg" alt="webby">
+              <h6 class="mt-5 textIcons">
+                Illustrations for social awareness campaigns
+              </h6>
+          </figure>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-6">
+          <figure class="mt-5">
+              <img class="icons accordion mt-4" src="assets/icon55.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                Animated promos, UX expertise, and graphic design support for the marketing department
+              </h6>
+          </figure>
+      </div>
+      <div class="col-md-2 col-6">
+          <figure class="mt-5">
+              <img class="icons accordion mt-5" src="assets/icon66.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                User experience and interaction design for annual awwwards website
+              </h6>
+          </figure>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-6">
+          <figure class="mt-5">
+              <img class="icons accordion mt-4" src="assets/icon77.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                Branding and web design for a 3D editor
+              </h6>
+          </figure>
+      </div>
+      <div class="col-md-2 col-6">
+          <figure class="mt-4">
+              <img class="icons accordion mt-4" src="assets/icon88.svg" alt="webby">
+              <h6 class="mt-3 textIcons">
+                Web design and development for a museum website
+              </h6>
+          </figure>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-6">
+          <figure class="mt-5">
+              <img class="icons accordion mt-4" src="assets/icon99.svg" alt="webby">
+              <h6 class="mt-4 textIcons">
+                Redesign for the user interfaces and graphic content of all the company's products
+              </h6>
+          </figure>
+      </div>
+  </div>
+</section>
+<section class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+        <div class="d-flex align-items-center mt-5">
+            <h6>Born in Ukraine</h6>
+            <img class="imgUkraine" src="assets/ukraine.png" alt="ukraine">
+        </div>
+        <h1 class="titleDnipro mb-2">Dnipro</h1>
+        <figure>
+            <img class="img-fluid w-100 scroll-animate" alt="piscina" src="assets/piscina.png">
+        </figure>
+    </div>
+</div>
+</section>
+<section class="container-fluid">
+  <div class="row">
+    <div class=" col-12 mt-5 col-lg-7">
+      <h1 class="lets">Let's collaborate</h1>
+    </div>
+    <div class="col-md-12 col-12 mt-5 col-lg-5">
+      <h6>Service</h6>
+      <div class="row gap-2">
+        <button
+          class="col-auto rounded-pill px-3 py-2 shadow-sm border-0 text-dark btn-interface">
+          Interface design
+        </button>
+        <button
+          class="col-auto rounded-pill px-3 py-2 shadow-sm border-0 text-dark btn-interface">
+          Illustration
+        </button>
+        <button
+          class="col-auto rounded-pill px-3 py-2 shadow-sm border-0 text-dark btn-interface">
+          Identity
+        </button>
+        <button
+          class="col-auto rounded-pill px-3 py-2 shadow-sm border-0 text-dark btn-interface">
+          Animation
+        </button>
+        <button
+          class="col-auto rounded-pill px-3 py-2 shadow-sm border-0 text-dark btn-interface">
+          Webflow
+        </button>
+        <h6 class="mt-3 mb-1">Budget in USD</h6>
+        <div class="row gap-2">
+          <button
+            class="col-auto rounded-pill px-3 py-2 shadow-sm border-0 text-dark btn-interface">
+            less than 10K
+          </button>
+          <button
+            class="col-auto rounded-pill px-3 py-2 shadow-sm border-0 text-dark btn-interface">
+            10K-50K
+          </button>
+          <button
+            class="col-auto rounded-pill px-3 py-2 shadow-sm border-0 text-dark btn-interface">
+            more than 50K
+          </button>
+          <form class="mt-3">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control custom-input"
+                  id="name" placeholder="Name">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control custom-input"
+                  id="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control custom-input" id="details"
+                rows="3"
+                placeholder="Project details (optional)"></textarea>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button type="submit"
+                class="btn btn-link fs-3 fs-sm-1 custom-submit">submit</button>
+            </div>
+            <div class="col-9 col-lg-6 col-md-5 mb-5">
+              <img class="img-fluid w-100" alt="captcha"
+                src="assets/capcha.png">
+            </div>
+          </form>
+        </section>
+  <footer class="container-fluid bg-black mt-5 footer-animate">
+    <div class="row footer-content">
+      <div class="col-lg-auto col-md-2 col-sm-auto d-none d-md-block  text-white px-5 pt-5">
+        <h6 class="footerText">contact us</h6>
+      </div>
+      <div class="col-lg-auto col-md-2 col-sm-auto text-white px-5 pt-5 d-none d-md-block">
+        <h6 class="underline-hover footerText">mail@tubikstudio.com</h6>
+      </div>
+      <div class="col-lg-4 col-md-1">
+      </div>
+      <div class="col-auto text-white px-5 pt-5">
+        <h6 class="footerText">follow us</h6>
+      </div>
+      <div class="col-auto col-md-1 text-white px-5 pt-5 d-none d-md-block">
+        <h6 class="underline-hover footerText">dribble</h6>
+        <h6 class="underline-hover footerText">savee</h6>
+        <h6 class="underline-hover footerText">behance</h6>
+        <h6 class="underline-hover footerText">medium</h6>
+        <h6 class="underline-hover footerText">awwards</h6>
+        <h6 class="underline-hover footerText">awwards</h6>
+        <h6 class="underline-hover footerText">linkedin</h6>
+      </div>
+      <div class="col-auto col-md-1 text-white px-5 pt-5 d-block d-md-none">
+        <h6 class="underline-hover footerText">dribble</h6>
+        <h6 class="underline-hover footerText">savee</h6>
+        <h6 class="underline-hover footerText">behance</h6>
+        <h6 class="underline-hover footerText">medium</h6>
+        <h6 class="underline-hover footerText">awwards</h6>
+        <h6 class="underline-hover footerText">awwards</h6>
+        <h6 class="underline-hover footerText">linkedin</h6>
+        <h6 class="underline-hover footerText">instagram</h6>
+        <h6 class="underline-hover footerText">facebook</h6>
+        <h6 class="underline-hover footerText">x🤦‍♂️</h6>
+        <h6 class="underline-hover footerText">vimeo</h6>
+        <h6 class="underline-hover footerText">youtube</h6>
+        <h6 class="underline-hover footerText">threads</h6>
+      </div>
+      <div class="col-auto text-white px-5 pt-md-5 d-none d-md-block">
+        <h6 class="underline-hover footerText">instagram</h6>
+        <h6 class="underline-hover footerText">facebook</h6>
+        <h6 class="underline-hover footerText">x🤦‍♂️</h6>
+        <h6 class="underline-hover footerText">vimeo</h6>
+        <h6 class="underline-hover footerText">youtube</h6>
+        <h6 class="underline-hover footerText">threads</h6>
+      </div>
+    </div>
+    <div class="row d-block d-md-none">
+      <div class="col-3 text-white px-5 pt-5">
+        <h6 class="footerText">contact us</h6>
+      </div>
+      <div class="col-6 text-white px-5 pt-5">
+        <h6 class="underline-hover footerText">mail@tubikstudio.com</h6>
+      </div>
+    </div>
+    <div class="row mt-0 footer-content">
+      <div class="col-lg-4 col-md-4 pt-1 px-5">
+        <p class="text-white footerText">yeah, sometimes all you
+          need is an old-school pdf
+
+        </p>
+        <p class="text-white underline-hover footerText">download
+          PDF profile
+        </p>
+        <p class="mt-5 textFooter">
+          The text and graphic content of the website belongs to
+          tubik and cannot be used by other resources without our
+          permission and without the link to the source.
+        </p>
+        <p class="textFooter">© tubik 2025</p>
+      </div>
+      <div class="col-5">
+      </div>
+    </div>
+   </div>
+  </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

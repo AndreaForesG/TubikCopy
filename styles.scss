@@ -1,0 +1,453 @@
+$font-family-base: "Manrope", serif;
+$hr-color: black;
+$secondary: #4c32ff;
+$primary: black;
+$h1-font-size: 7vw;
+$h2-font-size: 2vw;
+$h5-font-size: 1.25vw;
+$white: white;
+$spacing-sm: 3.1vw;
+$spacing-md: 5vw;
+$spacing-lg: 8vw;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.logo {
+  width: 7vw;
+  max-width: none;
+  height: 2.35vw;
+  margin-bottom: 0;
+  position: relative;
+  margin-top: 18px;
+}
+
+.iconsWork {
+  width: 12vw;
+}
+
+.imgUkraine {
+  width: 1.5vw;
+  height: auto;
+}
+
+.titleDnipro {
+  font-size: 17vw;
+}
+
+.rotate-wrapper {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  .rotate {
+    width: 3.6vw;
+    animation: spin 6s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.play {
+  position: absolute;
+  margin-left: 0.2vw;
+  width: 0.7vw;
+  margin-top: 0.2vw;
+}
+
+.contact-us {
+  color: $secondary;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  font-weight: 500;
+  text-decoration: none;
+  color: $primary;
+  height: 1.2em;
+
+  span {
+    display: block;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  span:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+
+  &:hover {
+    span:nth-child(1) {
+      transform: translateY(-100%);
+    }
+
+    span:nth-child(2) {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.zoom-hover {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.services {
+  color: gainsboro;
+  letter-spacing: -8.5px;
+}
+
+.products {
+  letter-spacing: -8.5px;
+}
+
+.lets {
+  letter-spacing: -8.5px;
+  font-size: 9vw;
+  line-height: 8vw;
+}
+
+.services,
+.products {
+  line-height: 0.9;
+}
+
+.offcanvas.offcanvas-top {
+  background-color: $primary !important;
+  height: 100vh;
+  color: $white;
+  padding-top: 0;
+}
+
+.offcanvas-body .nav-link {
+  color: $white !important;
+}
+
+.offcanvas-body .nav-link {
+  font-size: 3rem;
+}
+
+.offcanvas-body ul {
+  position: absolute;
+  top: 320px;
+  left: 5x;
+}
+
+
+
+.icons {
+  width: 6vw;
+}
+
+.iconsca {
+  width: 3.7vw;
+}
+
+.iconsred {
+  width: 4vw;
+}
+
+.titleMvLittle {
+  line-height: 7rem;
+  letter-spacing: -2px;
+}
+
+.textTable {
+  font-size: 1.25vw;
+}
+
+.btn-interface {
+  font-size: 0.8rem;
+  color: #cfcfcf;
+  &:hover {
+    background-color: #8e89af !important;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $secondary !important;
+    color: $white !important;
+  }
+}
+
+.textFooter {
+  font-size: x-small;
+  color: #e1e1e1;
+}
+
+.custom-input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+
+  &:focus {
+    border-bottom-color: #007bff;
+    outline: none;
+  }
+}
+
+.custom-submit {
+  background: none;
+  color: inherit;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 2vw;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.numbers {
+  font-size: 15vw;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+
+.label {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.custom-line {
+  border: 1px solid $primary;
+}
+
+@media (max-width: 767px) {
+  .iconsWork {
+    width: 12vw;
+  }
+
+  .products,
+  .services {
+    letter-spacing: normal;
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .branding {
+    font-size: 40px;
+    margin-bottom: 62.5vw;
+  }
+
+  .lets {
+    letter-spacing: -0.3vw;
+  }
+
+  .numbers {
+    font-size: 13vw;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .label {
+    margin-bottom: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .titleMvLittle {
+    font-size: 13vw;
+    line-height: 2.5rem;
+    letter-spacing: -2px;
+  }
+
+  .titleMvAwards {
+    font-size: 11vw;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin-top: 5vw;
+    letter-spacing: -2px;
+    margin-bottom: 10vw;
+  }
+
+  .icons {
+    width: 24vw;
+  }
+
+  .iconsca {
+    width: 13vw;
+  }
+
+  .textIcons {
+    font-size: 4vw;
+  }
+
+  .textTable {
+    font-size: 2.5vw;
+    line-height: 0.5rem;
+  }
+
+  .imgUkraine {
+    width: 3vw;
+    height: auto;
+  }
+
+  .img-recortada {
+    height: 15rem;
+    object-fit: cover;
+    object-position: left top;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .products,
+  .services {
+    letter-spacing: normal;
+    font-weight: 600;
+  }
+
+  .lets {
+    letter-spacing: -0.3vw;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+
+  .textFooter {
+    font-size: 0.5vw;
+  }
+
+  .footerText {
+    font-size: 1vw;
+  }
+
+
+  .numbers {
+    font-size: 15vw;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .label {
+    margin-bottom: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .textIcons {
+    font-size: 1vw;
+    line-height: 1.2vw;
+  }
+
+  .titleMvLittle {
+    line-height: 2.7rem;
+    letter-spacing: -2px;
+  }
+
+  .imgUkraine {
+    width: 2vw;
+    height: auto;
+  }
+
+  .nav-link {
+    font-size: 1rem !important;
+  }
+}
+
+btn btn-light {
+  border-radius: 30px;
+}
+
+.section1 {
+  margin-top: 4rem;
+}
+
+.container-table {
+  margin-top: 6rem;
+}
+
+
+.swiper-wrapper {
+  display: flex;
+  align-items: start;
+  width: 400vw !important;
+}
+
+.swiper-slide {
+  width: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: auto;
+    padding-right: 30px !important;
+  }
+}
+
+.slide-inside {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 0;
+
+  &._1 {
+    width: 100%;
+  }
+}
+
+.slider {
+  background-color: $white;
+  margin: {
+    bottom: $spacing-lg;
+    top: $spacing-md;
+  }
+  padding-left: $spacing-sm;
+}
+
+.bg-navbar {
+  background-image: linear-gradient(#ffffffd9, #ffffffd9);
+}
+
+.underline-hover {
+  position: relative;
+  padding-bottom: 5px;
+  color: #e1e1e1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(0);
+  }
+}
